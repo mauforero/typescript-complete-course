@@ -53,3 +53,41 @@ car = {
     series: 3
 };
 console.log(car);
+// Functions
+function printMyName() {
+    return myName;
+}
+// void function
+function printSomething() {
+    console.log("Something, duh!");
+}
+// Argument types
+function multiply(n1, n2) {
+    return n1 * n2;
+}
+console.log(printMyName());
+printSomething();
+console.log(multiply(25, 32));
+// function types
+var multiplyTwo;
+multiplyTwo = multiply;
+console.log(multiplyTwo(2, 5));
+// Objects
+var person = {
+    name: "Mauricio",
+    age: 32
+};
+console.log(person);
+person = {
+    name: "Ricardo",
+    age: 34
+};
+console.log(person);
+// A complex object
+var complex = {
+    data: [100, 3.1415, 32],
+    output: function (none) {
+        return this.data;
+    }
+};
+console.log(complex);
